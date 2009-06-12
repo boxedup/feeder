@@ -17,7 +17,7 @@ Parsers implemented:
 
 Fetch systems implemented:
   
-  Simple GET
+* Simple GET
 
 == Usage
 
