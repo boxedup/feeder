@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE customer SYSTEM "dgm.dtd">
+<products>
+  <product>
+    <sku>M9177X/A </sku>
+    <category>LCD </category>
+    <price>1049 </price>
+    <imageurl>http://a248.e.akamai.net/7/248/2041/2690/store.apple.com/Catalog/Australia/Images/prodshot_20_inch_4display.jpg </imageurl>
+    <smallimageurl>http://a248.e.akamai.net/7/248/2041/2690/store.apple.com/Catalog/Australia/Images/prodshot_20_inch_4display.jpg </smallimageurl>
+    <name>20-inch Cinema </name>
+    <description>Big ideas need a big canvas. </description>
+    <ctpage>http://www.s2d6.com/x/?z=s&amp;x=c&amp;v=957399&amp;t=http://store.apple.com/0800-MY-APPLE/WebObjects/nzstore?family=Display&amp;amp;cid=AC0000075008&amp;amp;aosid=p208&amp;siteID=DGM[PUBID] </ctpage>
+    <features>20-inch (viewable); 1680 x 1050 optimal resolution; 16.7 million colours; DVI Display Connector; 2 port USB 2.0 Hub; 2 FireWire 400 ports </features>
+    <available>In Stock </available>
+    <shippingcost>0 </shippingcost>
+    <shippingtime>5-7 working days </shippingtime>
+    <dimensions>Height: 41 cm (16.1 inches) Width: 47.1 cm (18.5 inches) Depth: 17.4 cm (6.8 inches) Weight: 6.6 kg (14.5 pounds) </dimensions>
+    <keywords> </keywords>
+    <manufacturer>Apple </manufacturer>
+    <modelnumber>M9177X/A </modelnumber>
+  </product>
+  <product>
+    <sku>M9179X/A </sku>
+    <category>LCD </category>
+    <price>3198 </price>
+    <imageurl>http://a248.e.akamai.net/7/248/2041/2690/store.apple.com/Catalog/Australia/Images/prodshot_30_inch_4display.jpg </imageurl>
+    <smallimageurl>http://a248.e.akamai.net/7/248/2041/2690/store.apple.com/Catalog/Australia/Images/prodshot_30_inch_4display.jpg </smallimageurl>
+    <name>30-inch Cinema </name>
+    <description>Big ideas need a big canvas. </description>
+    <ctpage>http://www.s2d6.com/x/?z=s&amp;x=c&amp;v=957399&amp;t=http://store.apple.com/0800-MY-APPLE/WebObjects/nzstore?family=Display&amp;amp;cid=AC0000075008&amp;amp;aosid=p208&amp;siteID=DGM[PUBID] </ctpage>
+    <features>30-inch (29.7-inch viewable); 2560 x 1600 optimal resolution; 16.7 million colours; DVI Display Connector; 2 port USB 2.0 Hub; 2 FireWire 400 ports </features>
+    <available>In Stock </available>
+    <shippingcost>0 </shippingcost>
+    <shippingtime>5-7 working days </shippingtime>
+    <dimensions>Height: 54.3 cm (21.3 inches) Width: 68.8 cm (27.2 inches) Depth: 21.5 cm (8.46 inches) Weight: 12.47 kg (27.5 pounds) </dimensions>
+    <keywords> </keywords>
+    <manufacturer>Apple </manufacturer>
+    <modelnumber>M9179X/A </modelnumber>
+  </product>
+
+</products>

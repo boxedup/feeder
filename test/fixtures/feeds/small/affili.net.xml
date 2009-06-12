@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Products ProgramID="4214" ShopID="428">
+  <Product xmlns:contentDetection="cd:extension" ArticleNumber="24001RE">
+    <CategoryPath>
+      <ProductCategoryID>31012889</ProductCategoryID>
+      <ProductCategoryPath>Flowers, Gifts and Hampers &gt; Flowers and Plants</ProductCategoryPath>
+    </CategoryPath>
+    <Price>
+      <DisplayPrice>19.99 GBP</DisplayPrice>
+    </Price>
+    <Deeplinks>
+      <Product>http://being.successfultogether.co.uk/click.asp?ref=267628&amp;site=4214&amp;type=text&amp;tnb=6&amp;diurl=http://www.interflora.co.uk/afffeedoct08/catalog/product.xml?product_id=2190458&amp;cm_mmc=affilinet-_-data-_-feed-_-autumn08</Product>
+    </Deeplinks>
+    <Details>
+      <Title>Single Rose Gift Set</Title>
+      <DescriptionShort>We´ve chosen elegant Bear grass and an Aspidistra leaf as the perfect complement to a single long-stemmed red Rose presented in a stylish black vase. Plus, this gift is delivered with a 110g box of luxury Maison Fougcre chocolates.</DescriptionShort>
+    </Details>
+    <Date/>
+    <Images>
+      <Img Name="Adv">
+        <URL>http://www.interfloracentral.co.uk/datafiles/dfimages/24001RE-400x400.jpg</URL>
+      </Img>
+    </Images>
+    <Properties/>
+  </Product>
+  <Product xmlns:contentDetection="cd:extension" ArticleNumber="24005PI">
+    <CategoryPath>
+      <ProductCategoryID>31012889</ProductCategoryID>
+      <ProductCategoryPath>Flowers, Gifts and Hampers &gt; Flowers and Plants</ProductCategoryPath>
+    </CategoryPath>
+    <Price>
+      <DisplayPrice>24.50 GBP</DisplayPrice>
+    </Price>
+    <Deeplinks>
+      <Product>http://being.successfultogether.co.uk/click.asp?ref=267628&amp;site=4214&amp;type=text&amp;tnb=6&amp;diurl=http://www.interflora.co.uk/afffeedoct08/catalog/product.xml?product_id=2190542&amp;cm_mmc=affilinet-_-data-_-feed-_-autumn08</Product>
+    </Deeplinks>
+    <Details>
+      <Title>6 Pink Rose Hand-tied</Title>
+      <DescriptionShort>Your Six pink Rose Hand-tied will be arranged in the hands of an expert Interflora florist, using six large-headed Roses, luxurious foliage, contrasting cellophane and ribbon. Finally, presented in a stylish Interflora gift bag, it´s sure to deliver your message perfectly.</DescriptionShort>
+    </Details>
+    <Date/>
+    <Images>
+      <Img Name="Adv">
+        <URL>http://www.interfloracentral.co.uk/datafiles/dfimages/24005PI-400x400.jpg</URL>
+      </Img>
+    </Images>
+    <Properties/>
+  </Product>
+</Products>

@@ -1,0 +1,33 @@
+= feeder
+
+== Overview
+
+Feeder iterates over a database of feeds and pulls out the product, merchant and category information. It stores the information in a database.
+
+== Description
+
+There are limited numbers of ways that a data feed will be made available to us. The majority is based on a url which can simply be downloaded with a GET request.  This is the default method that we will pull feeds with.
+
+Each affiliate network will have a different xml format though, so we have a parser for each network e.g. AffiliateWindowParser.
+
+Feeder requires that we tell it the parser to use for pulling out product, merchant and category information, as well as the method to use to fetch it, which by default is a simple GET request.
+
+Parsers implemented:
+  
+
+Fetch systems implemented:
+  
+  Simple GET
+
+== Usage
+
+Instantiating Feeder is a simple call to the class variable `start`
+
+    Feeder.start
+
+Feeder will iterate over database rows ... tbc
+  
+
+== Copyright
+
+Copyright (c) 2009 Boxedup. See LICENSE for details.
