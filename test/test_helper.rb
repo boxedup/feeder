@@ -19,7 +19,7 @@ class Test::Unit::TestCase
 end
 
 def fixture(fixture_type, name)
-  fixture_filename = File.expand_path(File.join( File.dirname(__FILE__), "fixtures/#{fixture_type.to_s}/#{name.to_s}.xml" ) )
+  fixture_filename = File.expand_path(File.join( File.dirname(__FILE__), "fixtures/#{fixture_type.to_s}/small/#{name.to_s}.xml" ) )
   doc = Nokogiri::HTML(open(fixture_filename))
   doc.content
 end
