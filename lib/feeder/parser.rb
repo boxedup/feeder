@@ -1,5 +1,4 @@
 require 'ostruct'
-require 'rmem'
 
 class Feeder
   class Parser
