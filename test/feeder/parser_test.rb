@@ -13,7 +13,7 @@ class Feeder::ParserTest < Test::Unit::TestCase
         :name        => "name",
         :description => "description"
       }
-      @xml_file = File.join(File.dirname(__FILE__), %w[ .. fixtures feeds apple.xml ])
+      @xml_file = File.join(File.dirname(__FILE__), %w[ .. fixtures feeds small apple.xml ])
     end
   
     context "on initialization" do
