@@ -6,7 +6,7 @@ class Feeder::PullerTest < Test::Unit::TestCase
     setup do
       @uri = 'http://www.somewhere.com/product_feed.html'
       @xml = File.read(File.expand_path(File.join( File.dirname(__FILE__), "../fixtures/feeds/dgm/source.xml" ) ))
-      FakeWeb.register_uri(:get, @uri, :body => @apple_xml)
+      FakeWeb.register_uri(:get, @uri, :body => @xml)
     end
   
     context "calling fetch" do      
