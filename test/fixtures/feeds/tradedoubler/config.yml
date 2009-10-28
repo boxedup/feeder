@@ -1,0 +1,11 @@
+elements: 
+  image_url: imageUrl
+  name: name
+  category: TDCategoryName
+  deep_link: productUrl
+  price: price
+  currency: currency
+  product: product
+  products: products
+  description: shortDescription
+  sku: sku

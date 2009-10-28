@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'rake'
+require 'yard'
 
 begin
   require 'jeweler'
@@ -12,6 +13,7 @@ begin
     
     gem.add_dependency('feed_parser')
     gem.add_dependency('feed_puller')
+    gem.add_dependency('ruby-xslt')
   end
 
 rescue LoadError
@@ -41,17 +43,7 @@ end
 
 task :default => :test
 
-require 'rake/rdoctask'
-Rake::RDocTask.new do |rdoc|
-  if File.exist?('VERSION.yml')
-    config = YAML.load(File.read('VERSION.yml'))
-    version = "#{config[:major]}.#{config[:minor]}.#{config[:patch]}"
-  else
-    version = ""
-  end
-
-  rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "feeder #{version}"
-  rdoc.rdoc_files.include('README*')
-  rdoc.rdoc_files.include('lib/**/*.rb')
+YARD::Rake::YardocTask.new do |t|
+  t.files   = ['lib/**/*.rb']
+  t.options = []
 end

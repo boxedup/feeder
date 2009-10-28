@@ -1,0 +1,11 @@
+elements: 
+  image_url: URL
+  name: Details/Title
+  category: CategoryPath/ProductCategoryPath
+  deep_link: Deeplinks/Product
+  price: Price/DisplayPrice
+  product: Product
+  products: Products
+  description: Details/DescriptionShort
+  sku: @ArticleNumber
+  images_group: Images/Img

@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="no"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+  <xsl:template match="<%= options["elements"]["products"] %>">
+    <products>
+      <xsl:for-each select="<%= options["elements"]["product"] %>">
+        <product>
+          <sku><xsl:value-of select="<%= options["elements"]["sku"] %>"/></sku>
+          <category><xsl:value-of select="<%= options["elements"]["category"] %>"/></category>
+          <price xml:space="preserve"><xsl:value-of select="<%= options["elements"]["price"] %>"/><% if options["elements"]["currency"] %> <xsl:value-of select="<%= options["elements"]["currency"] %>"/><% end %></price>
+          <images>
+            <% if options["elements"]["images_group"] %><xsl:for-each select="<%= options["elements"]["images_group"] %>"><% end %>
+              <image_url><xsl:value-of select="<%= options["elements"]["image_url"] %>"/></image_url>
+            <% if options["elements"]["images_group"] %></xsl:for-each><% end %>
+          </images>
+          <name><xsl:value-of select="<%= options["elements"]["name"] %>"/></name>
+          <description><xsl:value-of select="<%= options["elements"]["description"] %>"/></description>
+          <deeplink><xsl:value-of select="<%= options["elements"]["deep_link"] %>"/></deeplink>
+        </product>
+      </xsl:for-each>
+    </products>
+  </xsl:template>
+</xsl:stylesheet>

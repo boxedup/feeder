@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<products>
+    <product>
+        <name>Steganos Safe Professional 2007 - English - More Information</name>
+        <productUrl>http://pdt.tradedoubler.com/click?a(407311)p(39324)prod(269161737)ttid(5)</productUrl>
+        <imageUrl>https://www.steganos.com/fileadmin/images/products/packshot_safepro2007_en.jpg</imageUrl>
+        <description>Protect your privacy with the strongest encryption available, from the market leader.</description>
+        <price>54.95</price>
+        <currency>EUR</currency>
+        <TDProductId>269161737</TDProductId>
+        <TDCategoryID>120</TDCategoryID>
+        <TDCategoryName>Haircare</TDCategoryName>
+        <merchantCategoryName>Steganos</merchantCategoryName>
+        <sku>SAFEPRO2007ENESD</sku>
+        <shortDescription>Protect your privacy with the strongest encryption available, from the market leader.</shortDescription>
+        <promoText/>
+        <previousPrice/>
+        <warranty/>
+        <availability/>
+        <inStock>999</inStock>
+        <shippingCost>0</shippingCost>
+        <deliveryTime/>
+        <weight/>
+        <size/>
+        <brand>Steganos</brand>
+        <model/>
+        <ean/>
+        <upc/>
+        <isbn/>
+        <condition/>
+        <mpn/>
+        <techSpecs/>
+        <manufacturer/>
+        <programName>test_ulrik</programName>
+        <programLogoPath>http://</programLogoPath>
+        <programId>39324</programId>
+        <advertiserProductUrl/>
+        <fields>
+            <FieldName>FieldValue</FieldName>
+        </fields>
+    </product>
+    <product>
+        <name>Steganos Safe 2008 - English - More Information</name>
+        <productUrl>http://pdt.tradedoubler.com/click?a(407311)p(39324)prod(269161743)ttid(5)</productUrl>
+        <imageUrl>https://www.steganos.com/typo3temp/pics/d870ed7ed1.jpg</imageUrl>
+        <description>Protect your privacy with the strongest encryption available, from the market leader.</description>
+        <price>29.95</price>
+        <currency>EUR</currency>
+        <TDProductId>269161743</TDProductId>
+        <TDCategoryID>120</TDCategoryID>
+        <TDCategoryName>Haircare</TDCategoryName>
+        <merchantCategoryName>Steganos</merchantCategoryName>
+        <sku>SAFE2008ENESD</sku>
+        <shortDescription>Protect your privacy with the strongest encryption available, from the market leader.</shortDescription>
+        <promoText/>
+        <previousPrice/>
+        <warranty/>
+        <availability/>
+        <inStock>999</inStock>
+        <shippingCost>0</shippingCost>
+        <deliveryTime/>
+        <weight/>
+        <size/>
+        <brand>Steganos</brand>
+        <model/>
+        <ean/>
+        <upc/>
+        <isbn/>
+        <condition/>
+        <mpn/>
+        <techSpecs/>
+        <manufacturer/>
+        <programName>test_ulrik</programName>
+        <programLogoPath>http://</programLogoPath>
+        <programId>39324</programId>
+        <advertiserProductUrl/>
+        <fields>
+            <FieldName>FieldValue</FieldName>
+        </fields>
+    </product>
+</products>

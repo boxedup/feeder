@@ -2,33 +2,72 @@
 
 == Overview
 
-Feeder iterates over a database of feeds and pulls out the product, merchant and category information. It stores the information in a database.
+Feeder is a set of classes for pulling and translating feeds in to a format we expect.
 
 == Description
 
-There are limited numbers of ways that a data feed will be made available to us. The majority is based on a url which can simply be downloaded with a GET request.  This is the default method that we will pull feeds with.
 
-Each affiliate network will have a different xml format though, so we have a parser for each network e.g. AffiliateWindowParser.
+=== Puller
 
-Feeder requires that we tell it the parser to use for pulling out product, merchant and category information, as well as the method to use to fetch it, which by default is a simple GET request.
+Xml affiliate feed files are pulled with a simple GET request and placed in a temporary file.  Currently this doesn't allow for HTTP BASIC or other authentication, but will probably be extended to handle this in the future.
 
-Parsers implemented:
-  
+=== Translator
 
-Fetch systems implemented:
-  
-* Simple GET
+The translator transforms an xml file from one format to an expected format.  It requires a description of how the fields are mapped.  It is case sensitive as the translator will downcase all elements to avoid issues with case sensitivity, affiliate networks are notorious for changing case on elements.
+
+For now, we assume the xml file is grouped by products.  Example:
+
+    <Products>
+      <Product>
+        <Name>My Product Name</Name>
+        <CategoryPath>
+          <ProductCategoryPath>Category Name</ProductCategoryPath>
+        </CategoryPath>
+        <Price>
+          <DisplayPrice>19.99</DisplayPrice>
+        </Price>
+      </Product>
+    </Products>
+
+The description is a hash of options mapping expected elements to actual elements.  In the following format:
+
+    {
+      "elements" => {
+        "image_url"    => "URL",
+        "name"         => "Details/Title",
+        "category"     => "CategoryPath/ProductCategoryPath",
+        "deep_link"    => "Deeplinks/Product",
+        "price"        => "Price/DisplayPrice",
+        "product"      => "Product",
+        "products"     => "Products",
+        "description"  => "Details/DescriptionShort",
+        "sku"          => "@ArticleNumber",
+        "images_group" => "Images/Img"
+      }
+    }
+
+These essentially map to an xml element.  Arrays of elements are automatically iterated over.  By default we use libxml to parse the xml file, making sure we don't load the entire file into memory as some of these files are 500Mb or larger in size.
+
+Obviously this is fairly specific to our project right now, but it could be made more generic with a few nips and tucks.
 
 == Usage
 
-Instantiating Feeder is a simple call to the class variable `start`
+Pulling a file with a uri:
 
-    Feeder.start
+    Feeder::Puller.fetch('http://www.example.com/feed.xml')
 
-Feeder will iterate over database rows ... tbc
-  
+Pulling a file with optional buffer size (in bytes):
+
+    Feeder::Puller.fetch('http://www.example.com/feed.xml', 16384)
+
+Translating a file and iterating over each product:
+
+    translator = Feeder::Translator.new(file_name)
+    translator.each do |product|
+      product.name # => "My Product Name"
+    end
 
 == Copyright
 
-Copyright (c) 2009 Boxedup. See LICENSE for details.
+Copyright (c) 2009 boxedup. See LICENSE for details.
 

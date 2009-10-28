@@ -20,6 +20,9 @@
       <Img Name="Adv">
         <URL>http://www.interfloracentral.co.uk/datafiles/dfimages/24001RE-400x400.jpg</URL>
       </Img>
+      <Img Name="Moo">
+        <URL>http://www.interfloracentral.co.uk/datafiles/dfimages/24001RE-800x800.jpg</URL>
+      </Img>
     </Images>
     <Properties/>
   </Product>

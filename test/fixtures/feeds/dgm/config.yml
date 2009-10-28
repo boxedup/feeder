@@ -1,0 +1,10 @@
+elements: 
+  image_url: imageurl
+  name: name
+  category: category
+  deep_link: ctpage
+  price: price
+  product: product
+  products: products
+  description: description
+  sku: sku
