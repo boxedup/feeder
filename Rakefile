@@ -6,14 +6,14 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "feeder"
-    gem.summary = %Q{TODO}
-    gem.email = "jamie@fearoffish.com"
-    gem.homepage = "http://github.com/fearoffish/feeder"
+    gem.summary = %Q{Feeder is a set of classes for pulling and translating feeds in to a format we expect.}
+    gem.email = "jamie@boxedup.com"
+    gem.homepage = "http://github.com/boxedup/feeder"
     gem.authors = ["Jamie van Dyke"]
     
-    gem.add_dependency('feed_parser')
-    gem.add_dependency('feed_puller')
+    gem.add_dependency('activesupport')
     gem.add_dependency('ruby-xslt')
+    gem.add_dependency('nokogiri')
   end
 
 rescue LoadError

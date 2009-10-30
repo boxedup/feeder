@@ -14,7 +14,7 @@
           </images>
           <name><xsl:value-of select="name"/></name>
           <description><xsl:value-of select="description"/></description>
-          <deeplink><xsl:value-of select="ctpage"/></deeplink>
+          <deep_link><xsl:value-of select="ctpage"/></deep_link>
         </product>
       </xsl:for-each>
     </products>

@@ -6,7 +6,6 @@ Feeder is a set of classes for pulling and translating feeds in to a format we e
 
 == Description
 
-
 === Puller
 
 Xml affiliate feed files are pulled with a simple GET request and placed in a temporary file.  Currently this doesn't allow for HTTP BASIC or other authentication, but will probably be extended to handle this in the future.
