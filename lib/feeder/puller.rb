@@ -23,5 +23,11 @@ module Feeder
       end
       filename
     end
+    
+    protected
+      
+      def log(message)
+        Feeder.log message
+      end
   end
 end

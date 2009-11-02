@@ -22,7 +22,7 @@ class Feeder::IteratorTest < Test::Unit::TestCase
           iterator = Feeder::Iterator.new(@xml)
           iterator.each do |product|
             product.should_not == nil
-            assert product.kind_of? Hash
+            assert product.kind_of?(Hash)
           end
         end
       end

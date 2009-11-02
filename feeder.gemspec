@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Jamie van Dyke"]
   s.date = %q{2009-10-30}
-  s.email = %q{jamie@fearoffish.com}
+  s.email = %q{jamie@boxedup.com}
   s.extra_rdoc_files = [
     "LICENSE",
      "README.rdoc"
@@ -25,9 +25,11 @@ Gem::Specification.new do |s|
      "VERSION",
      "feeder.gemspec",
      "lib/feeder.rb",
+     "lib/feeder/iterator.rb",
      "lib/feeder/puller.rb",
      "lib/feeder/templates/default.xsl.erb",
      "lib/feeder/translator.rb",
+     "test/feeder/iterator_test.rb",
      "test/feeder/puller_test.rb",
      "test/feeder/translator_test.rb",
      "test/fixtures/feeds/affili.net/config.yml",
@@ -47,7 +49,7 @@ Gem::Specification.new do |s|
      "test/fixtures/feeds/tradedoubler/source.xml",
      "test/test_helper.rb"
   ]
-  s.homepage = %q{http://github.com/fearoffish/feeder}
+  s.homepage = %q{http://github.com/boxedup/feeder}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.5}
