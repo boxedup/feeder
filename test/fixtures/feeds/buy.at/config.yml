@@ -1,0 +1,9 @@
+elements: 
+  image_url: image_url
+  name: product_name
+  deep_link: buyat_short_deeplink_url
+  price: online_price
+  product: product
+  products: products
+  description: description
+  sku: product_code

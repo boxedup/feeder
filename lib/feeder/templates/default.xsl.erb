@@ -1,20 +1,20 @@
 <?xml version="1.0" standalone="no"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-  <xsl:template match="<%= mappings["elements"]["products"] %>">
+  <xsl:template match="<%= mappings["products"] %>">
     <products>
-      <xsl:for-each select="<%= mappings["elements"]["product"] %>">
+      <xsl:for-each select="<%= mappings["product"] %>">
         <product>
-          <sku><xsl:value-of select="<%= mappings["elements"]["sku"] %>"/></sku>
-          <category><xsl:value-of select="<%= mappings["elements"]["category"] %>"/></category>
-          <price xml:space="preserve"><xsl:value-of select="<%= mappings["elements"]["price"] %>"/><% unless mappings["elements"]["currency"].nil? %> <xsl:value-of select="<%= mappings["elements"]["currency"] %>"/><% end %></price>
+          <sku><xsl:value-of select="<%= mappings["sku"] %>"/></sku>
+          <% unless mappings["category"].nil? %><category><xsl:value-of select="<%= mappings["category"] %>"/></category><% end %>
+          <price xml:space="preserve"><xsl:value-of select="<%= mappings["price"] %>"/><% unless mappings["currency"].nil? %> <xsl:value-of select="<%= mappings["currency"] %>"/><% end %></price>
           <images>
-            <%= "<xsl:for-each select=\"#{mappings["elements"]["images_group"]}\">" unless mappings["elements"]["images_group"].nil? %>
-              <image_url><xsl:value-of select="<%= mappings["elements"]["image_url"] %>"/></image_url>
-            <%= "</xsl:for-each>" unless mappings["elements"]["images_group"].nil? %>
+            <%= "<xsl:for-each select=\"#{mappings["images_group"]}\">" unless mappings["images_group"].nil? %>
+              <image_url><xsl:value-of select="<%= mappings["image_url"] %>"/></image_url>
+            <%= "</xsl:for-each>" unless mappings["images_group"].nil? %>
           </images>
-          <name><xsl:value-of select="<%= mappings["elements"]["name"] %>"/></name>
-          <description><xsl:value-of select="<%= mappings["elements"]["description"] %>"/></description>
-          <deep_link><xsl:value-of select="<%= mappings["elements"]["deep_link"] %>"/></deep_link>
+          <name><xsl:value-of select="<%= mappings["name"] %>"/></name>
+          <description><xsl:value-of select="<%= mappings["description"] %>"/></description>
+          <deep_link><xsl:value-of select="<%= mappings["deep_link"] %>"/></deep_link>
         </product>
       </xsl:for-each>
     </products>
