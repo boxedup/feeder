@@ -33,6 +33,7 @@ module Feeder
     #
     # @return [String] the filename of the output file
     def transform
+      tidy
       xslt = XML::XSLT.new
       xslt.xml = File.read(@source)
       output_location = ""
@@ -61,6 +62,10 @@ module Feeder
       @mappings["elements"].delete_if {|k,v| v.nil? || v == ""}
       mappings = @mappings["elements"]
       erb.result(binding)
+    end
+    
+    def tidy
+      %x{ tidy -mi -xml #{@source} }
     end
     
     protected
