@@ -26,8 +26,8 @@ module Feeder
     
     protected
       
-      def log(message)
-        Feeder.log message
+      def self.log(message)
+        Feeder.logger.debug "[feeder] #{message}"
       end
   end
 end
